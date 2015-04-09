@@ -1,0 +1,805 @@
+
+\documentclass[a4paper,11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%Paquetes
+\usepackage[spanish]{babel}  
+\usepackage{makeidx}  %%%%%%%%%%%%%%%%%Para crear indices
+\usepackage{indentfirst} %%%%%%%%%%%%%%%%Crear un indent al principio
+\usepackage[latin1]{inputenc}%%%%%%%%%%%%ñ y acentos
+%\usepackage{enumerate}%%%%%%%%%%%%%%%%Mejoras del entorno enumerate
+\usepackage{mathpazo}
+\usepackage[paperwidth=12cm,paperheight=15cm, hmargin={0.5cm,1cm}, top=0.5cm, bottom=1cm]{geometry}
+\usepackage{latexsym,amsmath,amssymb,amsfonts}
+
+%----- Paquete TiKz ------------------------
+\usepackage{tikz}
+\usepackage{enumitem}
+\newcommand*{\itembolasazules}[1]{\footnotesize\protect\tikz[baseline=-3pt]%
+\protect\node[scale=.95, circle, shade, ball
+color=orange]{\color{black}\large\bf#1};}
+%---------------------------------------------
+
+
+
+\pagestyle{empty}
+
+
+
+\begin{document}
+
+
+\tableofcontents
+
+\newpage
+
+
+
+\section*{\centerline{Geometría no euclidiana}}
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+
+\item Las rectas en el modelo de Poincaré. Rectas paralelas.
+
+\item La suma de los ángulos de un triángulo no es 180º.
+
+\item Construcción de la mediatriz de un segmento. Perpendicularidad. Punto medio.
+
+\item Construcción de la bisectriz. Igualdad de los ángulos.
+
+
+\item Construcción de las mediatrices, del circuncentro y de la circunferencia circunscrita.
+
+\item Construcción de las medianas y del baricentro.
+
+\item Construcción de las bisectrices y del incentro.
+
+\item Construcción de un triángulo equilátero y equiángulo.
+
+\item Construcción de un triángulo rectángulo y teorema de Pitágoras.
+
+\item Construcción de un cuadrado a partir de un lado.
+
+\item Otra construcción de un cuadrado.
+
+
+\end{enumerate}
+
+
+\newpage
+
+
+\section*{\centerline{Introducción}}
+\addcontentsline{toc}{subsection}{Introducción}
+
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Realiza la operación: 
+\[
+51+53\cdot (3-21)-7\cdot (-2)^{7}
+\]
+
+\item Realiza la operación: 
+\[
+\frac{41}{2} +\frac{11}{3} \left(\frac{77}{3}+\frac{5}{9}\right) -3 
+\]
+
+\item Realiza la operación con decimales:
+\[
+4.8 (45.94-89.78)^2-89,65
+\]
+
+\item Calcula $\pi$ con 50 cifras. Lo mismo para $\sqrt{2}$.
+
+\item Factoriza 612 y 5292. 
+
+
+\item Calcula MCM y MCD de 612 y 5292.
+
+
+\item Comprueba si 5673 es primo. Lo mismo con $2^{32}+1$. 
+
+
+\item Calcula el cociente y el resto de  567854 entre 457.
+ 
+
+
+\item Calcula todos los divisores 180.
+
+\item Demuestra que 496 es un número perfecto.
+ 
+ 
+\end{enumerate}
+
+
+
+\newpage
+
+\section*{\centerline{Potencias}}
+\addcontentsline{toc}{subsection}{Potencias}
+
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Calcular las siguientes potencias:
+\[
+a)\, (-3)^{23} \qquad \qquad b)\, a^{-4}
+\]
+
+\item Comprueba la propiedad del producto de potencias:
+\[
+a^n \cdot a^m=a^{m+n}
+\]
+
+\item Haz lo mismo con la propiedades de división y potencia de potencia:
+\[
+ \frac{a^m}{a^n} =a^{m-n} \qquad \qquad  (a^n)^m=a^{nm}
+\]
+
+\item Comprueba la propiedad:
+\[
+(a\cdot b)^n = a^n\cdot b^n
+\]
+
+\item Comprueba la propiedad:
+\[
+\left(\frac{a}{b}\right)^n =\frac{a^n}{b^n}
+\]
+
+\item Comprueba la propiedad:
+\[
+a^\frac{n}{m} = \sqrt[m]{a^n}
+\]
+
+
+
+\end{enumerate}
+
+\newpage
+
+\section*{\centerline{Radicales}}
+\addcontentsline{toc}{subsection}{Radicales}
+
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Calcula, de modo exacto y aproximado:
+\[
+a)\,\sqrt{80} \qquad \qquad   b)\,\sqrt[5]{224}
+\]
+
+\item Transforma en radicales las siguientes potencias:
+\[
+a)\, 2^{7/3} \qquad \qquad b)\, 2^{16/6}
+\]
+
+\item Simplifica los siguientes radicales:
+\[
+a)\,\sqrt[12]{2^9} \qquad \qquad b)\, \sqrt[3]{2^{11}}
+\]
+
+
+\item Realiza la siguiente multiplicación:
+\[
+\sqrt[6]{2^5} \cdot \sqrt{2^7} \cdot \sqrt[3]{2^2}
+\]
+
+\item Racionaliza:
+\[
+a)\,\frac{3}{\sqrt[3]{2^7}} \qquad \qquad b)\,\frac{5}{2\sqrt{3}-2}
+\]
+
+\item Simplifica:
+\[
+23\sqrt{125}+ 3\sqrt{20}-2\sqrt{45}
+\]
+
+
+\item Simplifica:
+\[
+\sqrt[3]{2^5\sqrt{2}} 
+\]
+
+\end{enumerate}
+
+\newpage
+
+\section*{\centerline{Polinomios}}
+\addcontentsline{toc}{subsection}{Polinomios}
+
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Realiza la operación:
+\[
+(x-2)^2+(8-5x)(4x-1)
+\]
+
+\item Factoriza los siguientes polinomios
+\[
+p=x^4-x^3-7x^2+13x-6 \qquad q=x^3-5x^2+8x-4
+\]
+
+
+\item Calcula MCM y MCD de los polinomios anteriores.
+
+\item Realiza la siguiente operación:
+\[
+\frac{x^2-3}{2x-5}+\frac{5x-2}{7x-1} \cdot \frac{6x+2}{4x^2-1}
+\]
+
+\item Calcula el cociente y el resto:
+\[
+(x^3-2x^2-5x-3):(2x^2-1)
+\]
+
+\item Factoriza (con números complejos) y sustituye:
+\[
+x^3-3x^2+x-3
+\]
+
+\end{enumerate}
+
+\newpage
+\section*{\centerline{Ecuaciones y sistemas}}
+\addcontentsline{toc}{subsection}{Ecuaciones y sistemas}
+
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+
+
+\item Resuelve la  ecuación:
+\[
+(2x^2+1)^2-6=(x^2+2)(x^2-2)
+\]
+
+\item Resuelve la ecuación:
+\[
+ax^2+bx+c=0
+\]
+
+\item Resuelve el sistema lineal:
+\[
+\left\{
+\begin{array}{ccc}
+5x+3 & = & 20-9y\\
+2x-3y & = & 5x-y
+\end{array}
+\right.
+\]
+
+
+\item Resuelve el sistema no lineal:
+\[
+\left\{
+\begin{array}{ccc}
+xy & = & 15\\
+x^2 +y^2 & = & 34
+\end{array}
+\right.
+\]
+
+
+\item Resuelve de modo aproximado:
+\[
+3\cos(x)+x^2=5
+\]
+
+\item Resuelve la inecuación:
+\[
+x^3-2x^2-5x+6>=0
+\]
+
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{\centerline{Números complejos}}
+\addcontentsline{toc}{subsection}{Números complejos}
+
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Calcula $\sqrt{-1}$ y resuelve la ecuación:
+\[
+x^2+1=0
+\]
+
+\item Resuelve la ecuación (y factoriza):
+\[
+x^3-8x^2+29x-52
+\]
+
+\item Dados $z=4+5i$ y $w=-2+6i$ realiza varias operaciones con ellos.
+
+\item Pasa a forma polar el número $z$. Calcula el módulo y el argumento por separado.
+
+\item Dado el número complejo $5_{30^\mathrm{o}}$ calcula su parte real e imaginaria. 
+
+\item  Utiliza  la fórmula de Euler para pasar a forma polar.
+
+\item Calcula el conjugado del número anterior y pásalo a forma polar.
+
+
+\item Calcula distintas raíces de $3+6i$.
+
+
+\end{enumerate}
+
+\newpage
+
+\section*{\centerline{Logaritmos  y trigonometría}}
+\addcontentsline{toc}{subsection}{Logaritmos y trigonometría}
+
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Calcula los siguientes logaritmos:
+\[
+a)\, \log_2(1024) \qquad \qquad b)\, \log_2(\sqrt{8})
+\]
+
+\item Halla el valor de $x$ en las siguientes igualdades:
+\[
+a)\,\log_x(125)=3 \qquad \qquad b)\, 7^x =115
+\]
+
+\item Resuelve la ecuación:
+\[
+\log(x+3)-\log(x-6)= 1
+\]
+
+
+\item Realiza la siguiente operación (en radianes):
+\[
+5 \cos\left(\frac{\pi}{2}\right)+2\cos(\pi)-\tan\left(\frac{\pi}{3}\right)
+\]
+
+\item Realiza la siguiente operación (en grados):
+\[
+\cos(60^\mathrm{o})-5\sin(135^\mathrm{o})
+\]
+
+\item Resuelve la siguiente ecuación, tanto en radianes como en grados:
+\[
+\cos(x) = \frac{1}{2}
+\]
+
+\item Calcula el arcocoseno de $\frac{1}{2}$.
+
+\item Encuentra la fórmula de seno de la suma, de la resta,...
+
+\end{enumerate}
+
+\newpage
+
+\section*{\centerline{Límites}}
+\addcontentsline{toc}{subsection}{Límites}
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Dada la función $f(x)=\frac{\sin(x)}{x}$, calcula la función en valores próximos al cero. Dibuja la función en un entorno de cero.
+
+\item Calcula el límite:
+\[
+\lim_{x\rightarrow 0} \frac{\sin(x)}{x}
+\]
+
+\item Calcula los límites laterales en $x=0$ de:
+\[
+f(x)= \frac{1}{x}
+\]
+
+\item Calcula el límite:
+\[
+\lim_{x\rightarrow \infty} \left(1+\frac{1}{x}\right)^x
+\]
+
+\item Calcula la derivada de $\cos(x)$ en un punto $a$ utilizando la definición con límites.
+
+
+\end{enumerate}
+
+\newpage
+
+\section*{\centerline{Derivadas}}
+\addcontentsline{toc}{subsection}{Derivadas}
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Calcula la derivada de las funciones:
+\[
+f(x)=4x^3-35x^2 \qquad \quad f(y)=4y^3-35y^2
+\]
+
+\item Calcula la derivada de la función:
+\[
+f(x)=ax^2+bx+c 
+\]
+donde $a$, $b$ y $c$ son parámetros.
+
+\item Calcula la derivada de orden 5 de:
+\[
+f(x)=\cos(12x)
+\]
+
+\item Calcula los posibles extremos y puntos de inflexión de:
+\[
+f(x)=4x^3-2x+7
+\]
+
+
+\item Calcular la ecuación de la recta tangente a:
+\[
+f(x)=\cos\left(\frac{x}{2}\right)
+\]
+en el punto $x=\pi$.
+
+\item Calcula polinomios de Taylor de: $f(x)=\cos(x)$.
+
+
+\end{enumerate}
+
+
+
+\newpage
+
+\section*{\centerline{Integrales}}
+\addcontentsline{toc}{subsection}{Integrales}
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Calcula la integral indefinida:
+\[
+\int x\cos(x) 
+\]
+Deriva el resultado para comprobar la integral.
+
+\item Calcula la integral definida:
+\[
+\int_0^4 4x^2-3
+\]
+
+\item Calcula la integral:
+\[
+\int_2^\infty \frac{1}{x^2}
+\]
+
+\item Calcular la integral dependiente de parámetros:
+\[
+\int A\cos(wt) \mathrm{dt}
+\]
+
+\item Calcular el área entre las curvas:
+\[
+f(x)=x^2 \qquad\qquad g(x)=-x^2+4
+\]
+
+\item Descomponer en fracciones simples:
+\[
+\frac{5x+3}{x^2+2x-3}
+\]
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{\centerline{Vectores}}
+\addcontentsline{toc}{subsection}{Vectores}
+
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item  Dados $u=(3,4)$ y $v=(-2,5)$ realiza combinaciones lineales con ellos.
+
+
+\item Realiza el producto escalar de los vectores.
+
+\item Calcula el módulo de ambos vectores. Haz la raíz cuadrada del  producto escalar y comprueba que coinciden.
+
+
+\item Calcula el ángulo que forman ambos vectores.
+
+\item Calcula el ángulo con la fórmula del coseno.
+
+
+\item Dados los vectores $u=(3,5,2)$ y $v=(-3,1,7)$ calcula su producto vectorial y comprueba la antisimetría. 
+
+\item Dado el vector $w=(7,2,1)$ comprobar que no se cumple la propiedad asociativa.
+
+\item Comprueba la identidad de Jacobi con los tres vectores.
+
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{\centerline{Matrices}}
+\addcontentsline{toc}{subsection}{Matrices}
+
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Dadas las matrices 
+\[
+A=\begin{pmatrix}
+5 &7 & 8\\
+-3 & 4 & 2 \\
+4 & 7 & 9
+\end{pmatrix}
+\qquad
+B=\begin{pmatrix}
+1 & 2 & 3\\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{pmatrix}
+\]
+realiza combinaciones lineales con ellas.
+
+\item Multiplica las matrices anteriores.
+
+\item Calcular $A$ elevado a la quinta potencia.
+
+\item Calcular el determinante de las matrices.
+
+\item Calcula la inversa de $A$. También la traspuesta.
+
+\item Construye la matriz identidad de orden 3 y comprueba que es el elemento neutro.
+
+\item Calcula el rango de las matrices.
+
+\item Reduce las matrices a forma escalonada.
+
+\item Construye una matriz utilizando la hoja de cálculo.
+
+
+
+\end{enumerate}
+
+
+\section*{\centerline{Sistemas lineales}}
+\addcontentsline{toc}{subsection}{Sistemas lineales}
+
+
+
+%% Sistemas de ecuaciones
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Resuelve el sistema:
+\[
+\begin{cases}
+x-2y+z &=3\\
+2x-z &=9\\
+3x+y-2z &=13
+\end{cases}
+\]
+
+\item Resuelve el sistema anterior por el método de Cramer.
+
+\item Resuelve ahora por el método de Gauss.
+
+
+\item Resuelve, por distintos métodos:
+\[
+\begin{cases}
+x+y-z &=1\\
+x-y+3z&=3\\
+3x+y+z &=5
+\end{cases}
+\]
+
+
+\item Comprueba que el siguiente sistema es incompatible:
+\[
+\begin{cases}
+x+y-z &=1\\
+x-y+3z&=3\\
+3x+y+z &=6
+\end{cases}
+\]
+\end{enumerate}
+
+
+
+
+
+\newpage
+\section*{\centerline{Sucesiones y combinatoria}}
+\addcontentsline{toc}{subsection}{Sucesiones y combinatoria}
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Construye la sucesión $a_n=n^2+n$, calcula algunos de sus términos y suma los 100 primeros términos.
+
+
+\item Calcula:
+\[
+a)\,\sum_{k=1}^n k \qquad \qquad b)\, \sum_{k=1}^n k^2 \qquad \qquad c)\,\sum_{k=1}^n k^3
+\]
+
+\item Dada la sucesión $a_n=\frac{1}{n^2}$ calcula la suma de su serie.
+
+\item Dada la progresión geométrica, $a_n= \left(\frac{1}{2}\right)^n$, calcula la suma de los infinitos términos. Lo mismo con $a_n=b\cdot r^n$.
+
+
+
+
+
+\item Calcula el límite de la sucesión:
+\[
+a_n=\frac{(-1)^n}{n+1}
+\]
+
+
+
+\item Calcula: 
+\[
+a)\,45! \qquad \qquad b)\textrm{V}_{6,4} \qquad c)\, \binom{6}{4}
+\]
+
+
+
+\item Obtén la fórmula de las variaciones sin repetición y las de las combinaciones. Comprueba que $\textrm{V}_{n,n}= n!$.
+
+\item Genera números aleatorios.
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{\centerline{Estadística descriptiva}}
+\addcontentsline{toc}{subsection}{Estadística descriptiva}
+
+
+
+
+
+Las edades de un conjunto de 13 alumnos son:
+\[
+21,22, 21, 23, 22,21,23,23,21,21,21,24,22
+\]
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Calcula el número de datos. Calcula la media aritmética. Suma los datos y divide entre el número de datos.
+
+\item Calcula la mediana. Ordena los datos.
+
+\item Calcula el máximo, el mínimo y el rango.
+
+\item Calcula la desviación típica y la varianza y comprueba que una es la raíz cuadrada de la otra.
+
+\item Calcula  cuartiles y percentiles. Calcula el \mbox{rango} intercuartílico.
+
+\item  Calcula las frecuencias de los datos. Calcula la moda. Haz la tabla de frecuencias acumuladas.
+
+\item Calcula otras medias distintas.
+
+\item Haz lo mismo con la tabla de frecuencias:
+\[
+\begin{tabular}{c|c}
+x & f \\ \hline
+3 & 4\\
+4 & 6\\
+5 & 8
+\end{tabular}
+\]
+
+\item Genera 1000 tiradas de dos dados, suma los resultados y calcula la tabla de frecuencias.
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{\centerline{Estadística bidimensional}}
+\addcontentsline{toc}{subsection}{Estadística bidimensional}
+
+
+Las notas de 10 alumnos en dos asignaturas son:
+\[
+\begin{tabular}{c|cccccccccc}
+A & 7 & 6 & 4 & 7 & 8 & 3 & 7 & 5 & 7 & 2\\ \hline
+B & 6 & 6 & 5 & 8 & 8 & 4 & 7 & 7 & 6 & 1
+ \end{tabular} 
+\]
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Calcula la covarianza y el coeficiente de correlación.
+
+\item Calcula la media y la desviación típica de cada variable y comprueba la fórmula:
+\[
+\rho_{x,y}=\frac{\sigma_{x,y}}{\sigma_x \cdot \sigma_y}
+\]
+
+\item Calcula el sumatorio de los cuadrados de cada variable y el sumatorio del producto.
+
+\item Calcula la recta de regresión de la primera variable respecto a la segunda y comprueba que la pendiente se calcula con la fórmula:
+\[
+\frac{\sigma_{x,y}}{\sigma_x^2}
+\]
+
+\item Calcula el coeficiente de determinación $R^2$ para la recta de regresión anterior. Comprueba que coincide con el coeficiente de correlación al cuadrado.
+
+\item Haz un ajuste logarítmico y calcula el coeficiente de determinación $R^2$.
+
+\end{enumerate}
+
+\newpage
+
+\section*{\centerline{Probabilidad}}
+\addcontentsline{toc}{subsection}{Probabilidad}
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Dada una variable aleatoria $X \sim N(6,2)$, calcula:
+\[
+\textrm{P}(X<7) \qquad \textrm{P}(X>5)\qquad \textrm{P}(3<X<6)
+\]
+
+\item Dada $X \sim N(6,2)$ calcula $a$ para que:
+\[
+\textrm{P}(X\leq a)=0.7
+\]
+
+\item Genera 100 números aleatorios que sigan una normal de tipo $N(6,2)$ y calcula la media y la varianza.
+
+
+\item Dada una variable $X \sim B(14,0'8)$ calcula:
+\[
+\textrm{P}(X=7)\qquad \textrm{P}(X\leq 6)
+\]
+
+
+\item Genera 100 números aleatorios que sigan una binomial de tipo $B(14,0'8)$ y calcula $\mu$ y $\sigma^2$. Compara con la teoría.
+
+\end{enumerate}
+
+\end{document}
+
+\newpage
+
+
+\begin{enumerate}[label=\itembolasazules{}]
+
+\item Desarrolla las fórmulas del seno y el coseno del ángulo suma, del ángulo resta y del ángulo doble y triple.
+
+\item Haz lo mismo con la tangente pero expresa los resultados en función de la tangente.
+
+\item Desarrolla la siguiente expresión en función de $\tan(x/2)$:
+\[
+\cos(x)^2\sin(x)+5\tan(x)
+\]
+
+\item Linealiza (expresa como combinación lineal) la siguiente expresión:
+\[
+\cos(5x)^2\sin(2x)
+\]
+
+\end{enumerate}
+
+\newpage
+
+
+
+\end{document}
